@@ -1,0 +1,1323 @@
+/*--------------------------------------------------INICIO-------------------------------------------------*/
+
+
+
+
+
+
+
+.grid_index {
+
+        display: grid;
+        grid-template-columns: 800px 500px 800px;
+        grid-template-rows: 400px 600px 600px 900px 600px;
+        grid-template-areas: 
+        "encabezado_index encabezado_index nav_index" 
+        "empresa grua_index grua_index"
+        ". bh ."
+        "descripcion descripcion descripcion"
+        ". footer_index .";
+        gap: 10px;
+        padding: 10px;
+     
+        }
+
+
+
+
+
+
+/*@media*/
+
+@media screen and (max-width: 820px) and (min-width: 375px) {
+
+        .body_index {background-color: rgb(216, 78, 101)}   
+
+
+        grid_index {display: flex;
+                flex-direction: column;
+                }
+}
+        
+
+
+
+
+@media screen and (max-width: 375px) and (min-width: 0px)  {
+
+.body_index {background-color: rgb(177, 109, 120)}       
+
+.grid_index {display: flex;
+                flex-direction: column;
+                }
+
+.encabezado_index {
+                margin-bottom: 100px;
+                        
+                }
+
+
+.grua_index {margin-right: 100px;
+        margin-left: -418px;
+               }                    
+
+.mmg {
+        font-size: 50PX;}
+
+.descripcion        {
+
+        WIDTH: 300PX;
+
+}
+
+
+
+.footer_index {
+
+
+        MARGIN-LEFT: 231PX;
+}
+   
+       
+}
+
+@media screen and (max-width: 375px) {
+
+.body_galeria {
+        background-color: rgb(212, 111, 128);}                  
+
+
+.grid-container_galeria {background-color: rgb(212, 111, 128);
+        display: flex;
+        flex-direction: column;}
+
+.encabezado_galeria {display: flex;
+        flex-direction: column;
+        font-size: xx-small;}
+
+.nav_galeria {display: flex;
+        flex-direction: column;}
+
+
+
+.obras_y_banderaChina {display: flex;
+        flex-direction: column;
+        height: 1px;
+        width: 1px;}
+
+.videosChina {display: flex;
+        flex-direction: column;}
+
+}
+
+.obras_y_banderaAlemania {display: flex;
+        flex-direction: column;}
+
+
+
+.videosAlemania {display: flex;
+        flex-direction: column;}
+
+.tituloCamiones {display: flex;
+        flex-direction: column;}
+
+.tiposDeCamiones {display: flex;
+        flex-direction: column;}
+
+.fotosCamiones {display: flex;
+        flex-direction: column;}
+
+.footer_galeria {display: flex;
+        flex-direction: column;}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.encabezado_index {
+        
+        grid-area: encabezado_index;
+        font-family: 'Courier New';
+        font-style: italic;
+        font-size: 40px;
+        align-content: center;
+        text-align: center;
+        background-color: aqua;
+
+}
+
+.nav_index {
+        
+        grid-area: nav_index;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(248, 170, 170);
+        
+        display: flex;
+        flex-direction: column;
+        font-size: x-large;
+        justify-content: space-evenly
+
+    }
+
+.empresa {
+        
+        grid-area: empresa;
+        font-style: italic;
+    font-family: 'Hubballi', cursive;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1cm;
+
+}
+
+.grua_index {
+        
+        grid-area: grua_index;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 500px;
+        width: 1500px;
+        margin-top: auto;
+        margin-bottom: auto;
+
+}
+
+.bh {
+
+        grid-area: bh;
+        font-style: italic;
+        font-family: 'Hubballi', cursive;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 4cm;
+
+}
+
+.descripcion {
+        
+        grid-area: descripcion;
+        font-style: italic;
+    font-family: 'Hubballi', cursive;
+    font-size: 4cm;
+
+}
+
+.footer_index {
+        
+        grid-area: footer_index;
+        font-size: 20px; 
+        font-style: italic;
+        color: black ;
+        text-align: center; 
+        border-right: 100px;  
+        border-left: 100px;    
+        background-image: url(https://thumbs.dreamstime.com/b/escritorio-de-oficina-con-el-ordenador-los-cuadernos-y-la-taza-de-caf%C3%A9-sobre-el-fondo-blanco-95727035.jpg);
+        text-decoration: underline;
+        background-repeat: no-repeat;
+
+}
+        
+.grid-container_galeria { 
+        display: grid;
+        grid-template-columns: 800px 500px 800px;
+        grid-template-rows: 400px 600px 600px 600px 600px 600px 600px;
+        grid-template-areas: 
+        "encabezado_galeria encabezado_galeria nav_galeria"
+        "obras_y_banderaChina . videosChina"
+        "obras_y_banderaAlemania . videosAlemania"
+        "tituloCamiones tituloCamiones tituloCamiones"
+        "tiposDeCamiones tiposDeCamiones tiposDeCamiones"
+        "fotosCamiones fotosCamiones fotosCamiones"
+        ". footer_galeria .";
+        gap: 10px;
+        padding: 10px;
+      }
+      
+.encabezado_galeria {
+        
+        
+        grid-area: encabezado_galeria;
+        font-family: 'Courier New';
+        font-style: italic;
+        font-size: 40px;
+        align-content: center;
+        text-align: center;
+        background-color: aqua;
+
+}
+
+.nav_galeria {
+        
+        grid-area: nav_galeria;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(248, 170, 170);
+        font-size: x-large;
+        justify-content: space-evenly
+    }
+
+
+.obras_y_banderaChina {
+        
+        grid-area: obras_y_banderaChina;       
+        margin-top: 200px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;      
+        display: flex;
+        flex-direction: column;       
+        align-items: center;        
+        justify-content: space-evenly;
+        font-style: italic;
+        font-family: 'Hubballi', cursive;
+        font-size: 1cm;
+        align-content: center;   
+
+       
+
+}
+
+.videosChina {grid-area: videosChina;}
+
+.obras_y_banderaAlemania {
+        
+        grid-area: obras_y_banderaAlemania;
+        font-family: 'Hubballi', cursive;
+        display: flex;
+        flex-direction: column;
+        font-size: xx-large;
+        justify-content: center;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        align-items: center;
+   
+
+}
+
+.videosAlemania {
+    
+    grid-area: videosAlemania;
+    margin: auto;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.alemania1 {
+
+        display: flex;
+        height: 400px;
+        width: 400px;
+}
+
+.alemania2 {
+
+        display: flex;
+        height: 400px;
+        width: 400px;
+}
+
+.tituloCamiones {
+        
+        grid-area: tituloCamiones;
+        
+        font-family: 'Hubballi', cursive;
+        text-align: center;
+        font-size: 2cm;
+        margin-top: auto;
+        padding-left: 5px;
+        border: 5px dashed rgb(165, 139, 139);
+
+}
+
+.tiposDeCamiones {
+        
+        grid-area: tiposDeCamiones;
+        font-family: 'Hubballi', cursive;
+        display: flex;     
+        flex-direction: row;       
+        font-size: xx-large;
+        justify-content: center;  
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly;  
+        align-items: center;
+
+
+}
+
+.fotosCamiones {
+        
+        grid-area: fotosCamiones;
+        display: flex;
+        justify-content: center;  
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly;   
+        align-items: center;
+
+               
+
+}
+
+
+
+.footer_galeria {
+
+        grid-area: footer_galeria;
+        font-size: 20px; 
+        font-style: italic;
+        color: black ;
+        text-align: center; 
+        border-right: 100px;  
+        border-left: 100px;    
+        background-image: url(https://thumbs.dreamstime.com/b/escritorio-de-oficina-con-el-ordenador-los-cuadernos-y-la-taza-de-caf%C3%A9-sobre-el-fondo-blanco-95727035.jpg);
+        text-decoration: underline;
+        background-repeat: no-repeat;
+
+}
+
+
+/*FLEX*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.encabezado {
+grid-row: 1;
+}
+
+
+
+
+.grid-container_nosotros{ display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto; 
+        gap: 10px;
+        padding: 10px; }
+
+.encabezado_nosotros {
+        grid-row: 1; grid-column: 1;
+         background-color: lightgray; 
+
+                font-weight: 100px;
+                font-family: 'Courier New';
+                font-style: italic;
+                font-size: 40px;
+        
+                align-content: center;
+        
+        
+                text-align: center;
+                
+        
+                background-color: aqua;}
+        
+        
+.nav_nosotros {
+                grid-row: 1;  grid-column: 2;    
+        }
+
+.presentacion {grid-row: 2; grid-column: 1 / span 2;}
+
+.fotosTrabajando {grid-row: 3; grid-column: 1 / span 2;}
+
+.footer_nosotros {grid-row: 4; grid-column: 1 / span 2; }
+
+.grid-container_contacto{ display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto; 
+        gap: 10px;
+        padding: 10px; }
+
+.encabezado_contacto {
+        grid-row: 1; grid-column: 1;
+         background-color: lightgray; 
+
+                font-weight: 100px;
+                font-family: 'Courier New';
+                font-style: italic;
+                font-size: 40px;
+        
+                align-content: center;
+        
+        
+                text-align: center;
+                
+        
+                background-color: aqua;}
+        
+        
+.nav_contacto {
+                grid-row: 1;  grid-column: 2;    
+        }
+
+.dosBloques {grid-row: 2;}
+
+.rrssFormulario {grid-row: 2;}
+
+.footer_contacto {grid-row: 4; grid-column: 1 / span 2; }
+
+
+
+
+
+
+
+
+
+
+
+.grid-container_servicios{ display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto; 
+        gap: 10px;
+        padding: 10px; }
+
+.encabezado_servicios {
+        grid-row: 1; grid-column: 1;
+         background-color: lightgray; 
+
+                font-weight: 100px;
+                font-family: 'Courier New';
+                font-style: italic;
+                font-size: 40px;
+        
+                align-content: center;
+        
+        
+                text-align: center;
+                
+        
+                background-color: aqua;}
+        
+        
+.nav_servicios {
+                grid-row: 1;  grid-column: 2;    
+        }
+
+.servicios{grid-row: 2; grid-column: 1 / span 2;}
+
+.imagenBarrioPrivado {grid-row: 3; grid-column: 1 / span 2;}
+
+.footer_servicios {grid-row: 4; grid-column: 1 / span 2; }
+
+.grid-container_contacto {display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.5fr 1fr 1fr 1.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "header_contacto header_servicios"
+          "nav_contacto nav_contacto"
+          "dosBloques dosBloques"
+          "footer_servicios footer_servicios"
+}
+
+
+.body {background-color: rgb(212, 212, 212); }
+
+
+
+      /*TITULO DE LA PAGINA*/
+
+.encabezado {background-color: lightgray; 
+
+        font-weight: 100px;
+        font-family: 'Courier New';
+        font-style: italic;
+        font-size: 40px;
+
+        align-content: center;
+
+
+        text-align: center;
+        
+
+        background-color: aqua;}
+
+
+        /*LISTA DE NAVEGACION*/
+
+.nav { 
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: rgb(248, 170, 170);
+         
+        }
+
+
+        /*ELEMENTOS DE LA LISTA DE NAVEGACION*/
+        
+.navis_galeria {   
+        
+        font-family: 'Oxygen', sans-serif;
+        background-color: rgb(157, 128, 184);
+        }
+
+/*fixed*/
+
+.fixed {width: 150px;
+        height: 150px;
+
+        position: fixed;
+
+        top: 0px;
+        left: 0px;
+
+        color: rgb(29, 22, 22);
+
+        margin-left: 10px;;
+        padding-right: 1px;
+        text-indent: 0px;
+        text-align: center;
+
+        padding-top: 50px;
+
+
+       
+        
+
+        background-color: rgb(202, 202, 42);} 
+        
+
+                                                /*Empresa constructora de diseño y calidad internacional*/
+.subtitulo { 
+        font-style: italic;
+        font-family: 'Hubballi', cursive; 
+        background-color: lightsalmon;
+        font-size: 50px;
+        margin-top: 5PX;
+        margin-bottom: 5PX;
+        margin-right: 150PX;
+        margin-left: 150px;
+        display: inline-block;
+        border: 5px red dashed;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 100px;
+        
+        
+        background-color: pink;}
+
+
+                        /*Breve historia*/
+
+.subtitulo1 { display: block;
+        
+        font-style: italic;
+        font-family: 'Hubballi', cursive;        
+        font-size: 50px;        
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 200px; 
+        color: blue;
+       
+           
+         text-decoration: underline;}
+
+.descripcion {  font-size: 25px;    /*descripcion*/
+                
+                text-indent: 50px;
+
+                font-style: italic;
+                text-decoration:solid;
+                color: lightcyan;
+                line-height: 40px;
+
+                margin-bottom: 100px;
+                margin-left: 150px;
+                margin-right: 150px;
+
+                padding-left: 5px;
+                padding-right: 140px;
+                padding-bottom: 60px;
+                padding-bottom: 400px;
+
+                background-size: cover;
+ 
+                background-image:url(https://w.wallhaven.cc/full/39/wallhaven-39ryky.jpg);  
+                background-size: cover;
+                }
+
+.descripcion1 {font-size: 1cm;}
+
+
+                /*ultimosproyectos*/   
+
+
+.tituloUltimosproyectos {
+        
+        
+        background-color: lightsalmon;          
+        font-style: italic;
+        font-family: 'Hubballi', cursive; 
+        font-size: 50px;
+        margin-top: 5PX;
+        margin-bottom: 50PX;
+        margin-right: auto;
+        margin-left: auto;
+        display: inline-block;
+
+        border: 5px red dashed;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+        
+        
+        
+        
+        text-decoration: underline;
+        background-color: pink;}
+
+
+
+.tabla_y_foto_index {display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        
+        justify-content: space-evenly;
+        align-items: center;
+
+        margin-bottom: 100px;
+        margin-top: 100px;
+}
+
+
+        /*FOTO PRINCIPAL*/
+
+.grua { display: flex;
+        
+        border-style:solid; color: red; 
+        margin-left: 100px;
+}
+
+        /*TABLA INICIO ULTIMOS PROYECTOS*/
+
+
+
+
+
+
+
+.footer_index {
+        
+
+        font-size: 20px; 
+        font-style: italic;
+        color: black    ;
+
+        margin-top: 20px;
+       
+        margin-bottom: 50px;
+
+        display:inline-block;  
+
+        text-align: center; 
+        border-right: 100px;  
+        border-left: 100px;    
+
+        background-image: url(https://thumbs.dreamstime.com/b/escritorio-de-oficina-con-el-ordenador-los-cuadernos-y-la-taza-de-caf%C3%A9-sobre-el-fondo-blanco-95727035.jpg        
+
+        );
+
+        text-decoration: underline;
+
+        text-decoration: underline;}
+
+
+
+/*--------------------------------------------------GALERIA-------------------------------------------------*/
+
+/*--------------------------------------------------SECCION CHINA-----------------------------------------------*/
+
+.videosChina {
+       
+    margin: auto;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+
+.obras_y_banderaChina {
+        
+        
+        margin-top: 200px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+      
+       
+        
+        justify-content: space-around;
+        justify-content: space-between;
+        justify-content: space-evenly;
+
+       
+
+        font-style: italic;
+        font-family: 'Hubballi', cursive;
+        font-size: 1cm;
+
+        align-content: center;
+
+        
+
+       }
+
+.banderaMixtaChina {  display: flex;
+                        height: 200px;
+                        width: 400px;}
+
+.obrasChina {   display: flex;
+                margin-top: -200px;
+                
+        }
+
+/*--------------------------------------------------VIDEOS CHINA-----------------------------------------------*/
+
+                                /*VIDEO china 1*/
+.china1 {
+        display: flex;
+        height: 400px;
+        width: 400px;
+    }
+                                /*VIDEO china 2*/
+
+.china2 {
+                                    display: flex;
+                                    height: 400px;
+                                    width: 400px;
+                                }
+
+
+
+                                         /* linea divisoria */
+
+.lineaDivisoria {text-align-last: center;
+                color: red;
+                margin-bottom: -200px;
+                } 
+
+
+/*--------------------------------------------------SECCION ALEMANA-----------------------------------------------*/
+
+
+
+
+
+                
+                .bandera_alemania_y_argentina {  display: flex;
+                                        height: 200px;
+                                        width: 400px;
+                                        margin-bottom: -100px;}
+                
+                .obrasAlemania {   display: flex;
+                                
+                        }
+
+/*--------------------------------------------------VIDEOS ALEMANIA-----------------------------------------------*/                                        
+
+                                
+                                        
+                                                                        /*VIDEO alemania 1*/
+.alemania1 {       display: flex;} 
+                                                                        /*VIDEO alemania 2*/
+.alemania2 {       display: flex;}                                  
+              
+
+                
+
+
+
+        /*TITULOS DE CAMIONES*/
+
+
+
+
+.camionesArticulados {display: flex;
+                        text-decoration: underline solid 1px rgb(187, 12, 12); 
+                
+                        }
+
+.camionesObras {display: flex;
+        text-decoration: underline solid 1px rgb(187, 12, 12)}
+
+.cargadoresCadenas {display: flex;
+        text-decoration: underline solid 1px rgb(187, 12, 12)}
+
+                       
+
+.imagenArticulado {display: flex;
+        height: 300px;
+        width: 350px;
+        border: solid 5px rgb(231, 143, 143);}
+
+
+
+.imagenObra{display: flex;
+        height: 300px;
+        width: 350px;
+        border: solid 5px rgb(231, 143, 143);
+        }
+        
+
+
+.imagenCadenas{display: flex;
+        height: 300px;
+        width: 350px;
+        border: solid 5px rgb(231, 143, 143);}
+
+
+
+/*--------------------------------------------------NOSOTROS-------------------------------------------------*/
+
+
+
+
+
+                                                        /*Sobre nosotros*/
+.subtituloNosotros_1 {font-style: italic;
+        font-family: 'Hubballi', cursive; 
+        background-color: lightsalmon;
+        font-size: 35px;
+        margin-top: 5PX;
+        margin-bottom: 5PX;
+        
+        display: inline-block;
+        align-items: center;
+        margin-left: -200px;
+        }
+
+                                        /* presentacion nosotros */
+
+
+.presentacion  { 
+        font-style: italic;
+        font-family: 'Hubballi', cursive;
+        margin-top: 250px;
+        margin-left: 200px;
+        font-size: 1cm;
+        margin-right: 200px;
+        text-indent: 250px;
+        
+        margin-bottom: 150px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;   }
+
+
+  
+
+        /* foto trabajando1 */
+
+.fotosTrabajando {display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        justify-content: space-between;
+                        justify-content: space-around;
+                        align-items: center;
+                        }
+
+.trabajando1 {
+                
+                display: flex;
+               }
+                
+/* foto trabajando2 */
+
+.trabajando2 {
+               
+        
+                display: flex;}
+
+/* foto trabajando3 */
+
+.trabajando3 {
+      
+
+        display: flex;}
+
+.footer_nosotros {
+        
+
+                font-size: 20px; 
+                font-style: italic;
+                color: black    ;
+        
+                margin-top: 20px;
+                margin-left: 450px;        
+                margin-bottom: 50px;
+        
+                display:inline-block;  
+        
+                text-align: center; 
+                border-right: 100px;  
+                border-left: 100px;    
+        
+                background-image: url(https://thumbs.dreamstime.com/b/escritorio-de-oficina-con-el-ordenador-los-cuadernos-y-la-taza-de-caf%C3%A9-sobre-el-fondo-blanco-95727035.jpg        
+        
+                );
+        
+                text-decoration: underline;}
+
+.footer_nosotros {
+        
+
+                        font-size: 20px; 
+                        font-style: italic;
+                        color: black    ;
+                
+                        margin-top: -600px;
+                        margin-left: 450px;        
+                     ;
+
+                
+                        display:inline-block;  
+                
+                        text-align: center; 
+                        border-right: 100px;  
+                        border-left: 100px;    
+                
+                        background-image: url(https://thumbs.dreamstime.com/b/escritorio-de-oficina-con-el-ordenador-los-cuadernos-y-la-taza-de-caf%C3%A9-sobre-el-fondo-blanco-95727035.jpg        
+                
+                        );
+                
+                        text-decoration: underline;}
+                        
+
+
+/*--------------------------------------------------SERVICIOS-------------------------------------------------*/
+
+
+
+
+        /* Presentacion de Servicios */
+
+.imagenBarrioPrivado {display: flex;
+                       flex-direction: row;
+                        justify-items: end;
+                        align-items: center;}
+
+.barrioPrivado {display: flex;
+                
+                margin-left: 600px;
+                margin-top: -700px;
+        
+                height: 350px;}
+
+.servicios {
+        
+        display: flex;
+        flex-direction: column;
+        
+        font-style: italic;
+        font-family: 'Hubballi', cursive; 
+        background-color: lightsalmon;
+        font-size: 35px;
+
+        margin-top: 200PX;
+        margin-bottom: 100PX;
+        margin-right: 150PX;
+        margin-left: 150px;
+
+      
+        padding-left: 50px;
+       
+        align-items: flex-start;}
+        
+
+         /* Listado de Servicios */
+
+.industrias { display:flex;       
+        
+       
+
+        font-style: italic;
+        font-family: 'Hubballi', cursive;
+        font-size: 1cm;
+        
+        
+     
+       
+      
+        background-color: pink;
+        }
+
+       
+
+.countries{ display:flex;       
+        
+  
+
+        font-style: italic;
+        font-family: 'Hubballi', cursive;
+        font-size: 1cm;
+        
+        
+
+       
+          
+
+        background-color: pink;}
+
+.barrios{ display:flex;       
+        
+      
+
+        font-style: italic;
+        font-family: 'Hubballi', cursive;
+        font-size: 1cm;
+        
+        
+
+       
+       
+        
+
+        background-color: pink;}
+
+.comercios{ display:flex;       
+        
+       
+
+        font-style: italic;
+        font-family: 'Hubballi', cursive;
+        font-size: 1cm;  
+       
+
+
+        background-color: pink;
+
+        }
+
+.edificiosPublicos{ display:flex;       
+    
+
+        font-style: italic;
+        font-family: 'Hubballi', cursive;
+        font-size: 1cm;
+    
+         
+        
+
+        background-color: pink;}
+
+.footer_servicios {
+        
+
+                font-size: 20px; 
+                font-style: italic;
+                color: black    ;
+        
+                margin-top: 20px;
+                margin-left: 450px;        
+                margin-bottom: 50px;
+        
+                display:inline-block;  
+        
+                text-align: center; 
+                border-right: 100px;  
+                border-left: 100px;    
+        
+                background-image: url(https://thumbs.dreamstime.com/b/escritorio-de-oficina-con-el-ordenador-los-cuadernos-y-la-taza-de-caf%C3%A9-sobre-el-fondo-blanco-95727035.jpg        
+        
+                );
+        
+                text-decoration: underline;}
+
+
+
+
+/*--------------------------------------------------CONTACTO-------------------------------------------------*/
+
+.dosBloques {display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+              
+                
+                
+                margin-top: 200px;
+                margin-bottom: 150px;
+                margin-right: 40px;
+                
+                
+        }
+
+/* llamanos */
+
+.llamanosContacto {display: flex;
+        
+        font-style: italic;
+        font-family: 'Hubballi', cursive; 
+        background-color: lightsalmon;
+        font-size: 35px; 
+        border: solid 5px rgb(231, 97, 119);  
+        margin-left: 200px;
+        margin-right: 200px;    
+        
+
+        }
+
+/* encontranos aca */
+
+.subtituloContacto_1 { display: flex; 
+        
+        
+        font-style: italic;
+        font-family: 'Hubballi', cursive;
+        font-size: 1cm;
+        margin-left: 200px;
+        margin-right: 200px;  
+
+        
+
+        border: 5px red solid;
+      
+        
+                
+        
+        
+        text-decoration: underline;
+        background-color: pink;}
+                
+      
+.rrssFormulario {display: flex;
+                flex-direction: row;
+                justify-content: center;
+                justify-content: space-evenly;
+
+                margin-left: 100px;
+                margin-bottom: 100px;
+                margin-top: -100px;
+                
+                
+               
+}
+
+/* RRSS */
+
+.formularioDeContacto {display: flex;
+}
+
+.rrss {
+        
+        display: flex;
+        
+        font-style: italic;
+font-family: 'Hubballi', cursive;
+font-size: 1cm;
+margin-right: 100px;}
+
+
+
+
+                        /*FOOTER*/
+
+
+
+        
+.iframe {margin-left: 400px; /*IFRAME - MAPA*/
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 200px;
+                height: 200px;
+                border-radius: 200px; color: bisque;
+                align-content: center;
+                }
+
+.footer_contacto {
+        
+
+                        font-size: 20px; 
+        font-size: 20px; 
+                        font-size: 20px; 
+                        font-style: italic;
+                        color: black    ;
+                
+                        margin-top: 20px;
+                        margin-left: 200px; 
+                        margin-right: 400px;       
+                        margin-bottom: 50px;
+                
+                        display:inline-block;  
+        display:inline-block;  
+                        display:inline-block;  
+                
+                        text-align: center; 
+        text-align: center; 
+                        text-align: center; 
+                        border-right: 100px;  
+        border-right: 100px;  
+                        border-right: 100px;  
+                        border-left: 100px;    
+        border-left: 100px;    
+                        border-left: 100px;    
+                
+}
+
+
+        
+.iframe {margin-left: 400px; /*IFRAME - MAPA*/
+                margin-top: 20px;
+                margin-left: 150px;
+                margin-right: auto;
+                width: 200px;
+                height: 200px;
+                border-radius: 200px; color: bisque;
+                align-content: center;
+                }
+
+
+
+
+
+
+
+
+
+
