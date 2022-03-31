@@ -243,6 +243,12 @@
         gap: 10px;
         padding: 10px;
       }
+
+
+.body_galeria {
+        background-image: linear-gradient(to right, blue , lightblue);
+       
+       }        
       
 .encabezado_galeria {
         
@@ -342,6 +348,9 @@
         padding-left: 5px;
         border: 5px dashed rgb(165, 139, 139);
 
+        transform: rotate(90deg);
+                          
+
 }
 
 .tiposDeCamiones {
@@ -392,157 +401,15 @@
 }
 
 
-/*FLEX*/
+.body_index {
+        background-color: rgb(212, 212, 212);
+        background-image: linear-gradient(to top, red , yellow);
+        
+               
 
-
-
-
-
-
-
-
-
-
-
-
-
-.encabezado {
-grid-row: 1;
 }
 
-
-
-
-.grid-container_nosotros{ display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto auto; 
-        gap: 10px;
-        padding: 10px; }
-
-.encabezado_nosotros {
-        grid-row: 1; grid-column: 1;
-         background-color: lightgray; 
-
-                font-weight: 100px;
-                font-family: 'Courier New';
-                font-style: italic;
-                font-size: 40px;
-        
-                align-content: center;
-        
-        
-                text-align: center;
-                
-        
-                background-color: aqua;}
-        
-        
-.nav_nosotros {
-                grid-row: 1;  grid-column: 2;    
-        }
-
-.presentacion {grid-row: 2; grid-column: 1 / span 2;}
-
-.fotosTrabajando {grid-row: 3; grid-column: 1 / span 2;}
-
-.footer_nosotros {grid-row: 4; grid-column: 1 / span 2; }
-
-.grid-container_contacto{ display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto auto; 
-        gap: 10px;
-        padding: 10px; }
-
-.encabezado_contacto {
-        grid-row: 1; grid-column: 1;
-         background-color: lightgray; 
-
-                font-weight: 100px;
-                font-family: 'Courier New';
-                font-style: italic;
-                font-size: 40px;
-        
-                align-content: center;
-        
-        
-                text-align: center;
-                
-        
-                background-color: aqua;}
-        
-        
-.nav_contacto {
-                grid-row: 1;  grid-column: 2;    
-        }
-
-.dosBloques {grid-row: 2;}
-
-.rrssFormulario {grid-row: 2;}
-
-.footer_contacto {grid-row: 4; grid-column: 1 / span 2; }
-
-
-
-
-
-
-
-
-
-
-
-.grid-container_servicios{ display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto auto; 
-        gap: 10px;
-        padding: 10px; }
-
-.encabezado_servicios {
-        grid-row: 1; grid-column: 1;
-         background-color: lightgray; 
-
-                font-weight: 100px;
-                font-family: 'Courier New';
-                font-style: italic;
-                font-size: 40px;
-        
-                align-content: center;
-        
-        
-                text-align: center;
-                
-        
-                background-color: aqua;}
-        
-        
-.nav_servicios {
-                grid-row: 1;  grid-column: 2;    
-        }
-
-.servicios{grid-row: 2; grid-column: 1 / span 2;}
-
-.imagenBarrioPrivado {grid-row: 3; grid-column: 1 / span 2;}
-
-.footer_servicios {grid-row: 4; grid-column: 1 / span 2; }
-
-.grid-container_contacto {display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1.5fr 1fr 1fr 1.5fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "header_contacto header_servicios"
-          "nav_contacto nav_contacto"
-          "dosBloques dosBloques"
-          "footer_servicios footer_servicios"
-}
-
-
-.body {background-color: rgb(212, 212, 212); }
-
-
-
-      /*TITULO DE LA PAGINA*/
+/*TITULO DE LA PAGINA*/
 
 .encabezado {background-color: lightgray; 
 
@@ -796,6 +663,8 @@ grid-row: 1;
         font-size: 1cm;
 
         align-content: center;
+
+        transform: translate(100px);
 
         
 
